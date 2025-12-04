@@ -6596,9 +6596,9 @@ CONFIG_ARCH_HAS_DEVMEM_IS_ALLOWED=y
 #
 ######################################################
 # 2 - Error
-CONFIG_MMU_NOTIFIER=y
-CONFIG_KSM=y
-
+CONFIG_CMA_DEBUGFS=y
+CONFIG_CMA_SYSFS=y
+CONFIG_PAGE_IDLE_FLAG=y
 
 
 

@@ -127,9 +127,7 @@ KCOV_INSTRUMENT_stackleak.o := n
 $(obj)/configs.o: $(obj)/config_data.gz
 
 targets += config_data.gz
-# 有助于检查您的内核是否具有 Docker 所需的所有必要功能。
-# $(obj)/config_data.gz: arch/arm64/configs/op9_defconfig FORCE
-$(obj)/config_data.gz: $(KCONFIG_CONFIG) FORCE
+$(obj)/config_data.gz: arch/arm64/configs/op9_defconfig FORCE
 	$(call if_changed,gzip)
 
 $(obj)/kheaders.o: $(obj)/kheaders_data.tar.xz
